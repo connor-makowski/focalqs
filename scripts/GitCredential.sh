@@ -23,7 +23,7 @@ then
   echo "Emails Match. Generating a git ID"
 else
   echo "Emails do not match. Restarting git credential creation process."
-  ./scripts/GitCredentials.sh
+  ./scripts/GitCredential.sh
   exit 1
 fi
 

@@ -30,7 +30,7 @@ then
   ./scripts/basics.sh | tee -a ~/StartLog.txt
   if [ "$Git" == "y" ];
   then
-    ./scripts/GitCredentials.sh | tee -a ~/StartLog.txt
+    ./scripts/GitCredential.sh | tee -a ~/StartLog.txt
   fi
   if [ "$PyVenv" == "y" ];
   then
@@ -52,6 +52,7 @@ then
   then
     ./scripts/mysql.sh | tee -a ~/StartLog.txt
   fi
+  exit 1
 else
   echo "Restarting Process."
   ./QuickStart.sh
