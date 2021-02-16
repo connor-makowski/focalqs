@@ -1,6 +1,9 @@
 #!/bin/bash
 echo "Installing pip and virtualenv"
 sudo apt-get install python3-pip -y
+echo "Aliasing python for python3"
+echo '#Python alias for python3' >> ~/.bash_aliases
+echo 'alias python="python3"' >> ~/.bash_aliases
 echo "Aliasing pip for pip3"
 echo '#Pip alias for pip3' >> ~/.bash_aliases
 echo 'alias pip="pip3"' >> ~/.bash_aliases
